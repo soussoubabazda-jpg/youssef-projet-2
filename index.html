@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Youssef Bouzid | CV numérique</title>
+  <meta name="description" content="CV numérique de Mohamed Youssef Bouzid, étudiant à l'ISET Radès : électronique embarquée, marketing digital et développement de marque.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#accueil">M. Y. Bouzid</a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#competences">Compétences</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="hero">
+      <div class="hero-text">
+        <h1>Mohamed Youssef Bouzid</h1>
+        <p class="lead">Étudiant en électronique embarquée à l'ISET Radès, avec une double sensibilité marketing digital et identité de marque.</p>
+        <p>Je conçois des systèmes à base d'Arduino et je construis des stratégies digitales. Je cherche un stage ou un premier poste où ces deux profils se rejoignent.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projets">Voir mes projets</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo" aria-label="Photo de profil">
+          <span class="photo-initials" aria-hidden="true">MY</span>
+          <img src="photo.png.png" alt="Portrait de Mohamed Youssef Bouzid" onerror="this.remove()">
+        </div>
+        <!-- Écran LCD 16x2 inspiré du projet Arduino -->
+        <div class="lcd" role="img" aria-label="Écran LCD affichant le nom et la formation">
+          <div class="lcd-row" id="lcd-1">Youssef Bouzid</div>
+          <div class="lcd-row" id="lcd-2">ISET Rades</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section">
+      <h2>Compétences acquises</h2>
+      <div class="grid-3">
+        <article>
+          <h3>Techniques</h3>
+          <ul>
+            <li>Arduino Uno, programmation C/C++</li>
+            <li>Capteurs DHT11 et flamme, afficheur LCD I2C</li>
+            <li>Électronique analogique : amplificateurs à AOP et à transistors BJT</li>
+            <li>HTML, CSS, Git et GitHub</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Marketing et marque</h3>
+          <ul>
+            <li>Étude de marché</li>
+            <li>Stratégie de marketing digital</li>
+            <li>Positionnement et identité de marque</li>
+            <li>Conception de CV et de documents professionnels</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Transversales</h3>
+          <ul>
+            <li>Travail en équipe</li>
+            <li>Communication client</li>
+            <li>Autonomie et rigueur</li>
+            <li>Langues : français, anglais, arabe tunisien</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCES -->
+    <section id="experiences" class="section alt">
+      <h2>Expériences et stages</h2>
+      <div class="timeline">
+        <article>
+          <h3>Stage, Tunisair</h3>
+          <p class="meta">Secteur aérien, Tunis. Période : à compléter</p>
+          <p>Immersion dans une compagnie aérienne : découverte de l'organisation des équipes et des procédures du transport aérien.</p>
+          <p class="tech">Missions à détailler : à compléter</p>
+        </article>
+        <article>
+          <h3>Projet de fin d'études, BRS Inc.</h3>
+          <p class="meta">Cabinet canadien de conseil en architecture IT. Période : à compléter</p>
+          <p>Étude de marché en français et stratégie de marketing digital pour le cabinet.</p>
+          <p class="tech">Outils : à compléter</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARCOURS -->
+    <section id="parcours" class="section">
+      <h2>Parcours académique</h2>
+      <div class="timeline">
+        <article>
+          <h3>ISET Radès, électronique embarquée</h3>
+          <p class="meta">Étudiant en deuxième année</p>
+          <p>Cours d'électronique analogique et numérique, programmation de microcontrôleurs, ateliers de déploiement web.</p>
+        </article>
+        <article>
+          <h3>Baccalauréat</h3>
+          <p class="meta">Section et année : à compléter</p>
+        </article>
+        <article>
+          <h3>Certifications et formations complémentaires</h3>
+          <p class="meta">À compléter</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section alt">
+      <h2>Projets</h2>
+      <div class="grid-3">
+        <article class="project">
+          <h3>Système de détection incendie</h3>
+          <p>Arduino Uno avec capteur DHT11, détecteur de flamme, écran LCD I2C 16x2 et buzzer. Le LCD affiche la température et l'humidité ; à la détection d'une flamme, il affiche une alerte et le buzzer émet trois bips.</p>
+          <p class="tech">Arduino, C/C++, DHT11, LCD I2C</p>
+          <a href="https://github.com/VOTRE-UTILISATEUR/VOTRE-DEPOT-ARDUINO" target="_blank" rel="noopener noreferrer">Code source sur GitHub</a>
+        </article>
+        <article class="project">
+          <h3>CÔRTÉ, marque de mode de luxe</h3>
+          <p>Développement du positionnement, des supports de marque et du plan de lancement d'une marque de mode de luxe.</p>
+          <p class="tech">Branding, go-to-market</p>
+        </article>
+        <article class="project">
+          <h3>Étude de marché BRS Inc.</h3>
+          <p>Analyse du marché et recommandations de marketing digital pour un cabinet de conseil IT canadien.</p>
+          <p class="tech">Étude de marché, stratégie digitale</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact et liens externes</h2>
+      <p>Basé à Tunis, Tunisie. Je réponds en français, en anglais et en arabe tunisien.</p>
+      <ul class="links">
+        <li><a href="https://mail.google.com/mail/?view=cm&to=soussoubabazda@gmail.com">soussoubabazda@gmail.com</a></li>
+        <li><a href="https://github.com/soussoubabazda-jpg" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/VOTRE-UTILISATEUR" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Mohamed Youssef Bouzid. Site statique publié avec GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
